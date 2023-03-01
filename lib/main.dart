@@ -34,37 +34,59 @@ class _MyHomePageState extends State<MyHomePage> {
   String _text = "Ganjil";
 
   void _incrementCounter() {
+    //percobaan1
     setState(() {
       _counter++;
 
-      if(_counter>30){
-        _counter = 0;
-      }
-      _text = "Genap Kelipatan 3 : ";
-      for(int i=1; i<=_counter; i++){
-        if(i%3 == 0){
-          if(i%2 == 0) {
-            _text += '${i}, ';
-          }
-        }}
-
-      // if(_counter>10){
-      //   // _counter = 1;
-      //   _counter = 0;
-      // }
-      //
-      // _text = "Ganjil: ";
-      // for(int i=0; i<=_counter; i++){
-      //   if(i%2 != 0) {
-      //     _text += '${i}, ';
-      //   }
-      // }
-      // if(_counter%2 == 0) {
-      //   _text = "Genap";
-      // }else{
-      //   _text = "Ganjil";
-      // }
+    if(_counter>10){
+        _counter = 1;
+    }
     });
+
+    //percobaan2
+    // setState(() {
+    //   _counter++;
+    // if(_counter>10){
+    //   // _counter = 1;
+    // }
+
+    // if(_counter%2 == 0) {
+    //   _text = "Genap";
+    // }else{
+    //   _text = "Ganjil";
+    // }
+    // });
+
+    //percobaan3
+    // setState(() {
+    //   _counter++;
+    //
+    //   if(_counter>30){
+    //     _counter = 0;
+    //   }
+
+    //   _text = "Ganjil : ";
+    //   for(int i=0; i<=_counter; i++){
+    //       if(i%2 == 0) {
+    //         _text += '${i}, ';
+    //       }
+    //  }
+    //  });
+
+
+    //latihan
+    // setState(() {
+    //   _counter++;
+    //   _text = "Genap Kelipatan 3 : ";
+    //   for(int i=1; i<=_counter; i++){
+    //     if(i%3 == 0){
+    //       if(i%2 == 0) {
+    //         _text += '${i}, ';
+    //       }
+    //     }
+    //   }
+    // });
+
   }
 
   @override
@@ -100,3 +122,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
